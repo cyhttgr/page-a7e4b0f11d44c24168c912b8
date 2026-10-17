@@ -1,0 +1,351 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>afweb · 一份关于订阅与连接的说明</title><meta name="description" content="afweb 把订阅、套餐和使用说明放在一页里讲清楚。朋友式的口吻，坦白的价格，够用的信息，帮你决定要不要用、怎么开始。"><meta name="keywords" content="afweb, afweb 订阅, afweb 套餐, afweb 使用说明, afweb 常见问题, 订阅服务, 客户端配置"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-4d8eafc50e.hygsr.cn/"><meta property="og:type" content="website"><meta property="og:title" content="afweb · 一份关于订阅与连接的说明"><meta property="og:description" content="afweb 把订阅、套餐和使用说明放在一页里讲清楚。朋友式的口吻，坦白的价格，够用的信息，帮你决定要不要用、怎么开始。"><meta property="og:url" content="https://p-4d8eafc50e.hygsr.cn/"><meta property="og:site_name" content="afweb"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-4d8eafc50e.hygsr.cn/", "name": "afweb · 一份关于订阅与连接的说明", "description": "afweb 把订阅、套餐和使用说明放在一页里讲清楚。朋友式的口吻，坦白的价格，够用的信息，帮你决定要不要用、怎么开始。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="a7e4b0f11d44c24168c912b8:cf4d3a8224c442066962d0d7d8d2ec197883ccca8a9c2e379e2025710faed85b:9085d9c5baed79956673"></head><body id="top"><style>
+  :root{--wine:#6b1f2e;--wine-deep:#4d1420;--ivory:#f6f1e7;--ivory-2:#efe7d8;--ink:#241a16;--ink-soft:#5b4a41;--line:#2b1f19}
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--ivory);color:var(--ink);font-family:"Songti SC","Source Han Serif SC",Georgia,"Times New Roman",serif;line-height:1.75;font-size:17px;-webkit-font-smoothing:antialiased}
+  a{color:var(--wine);text-decoration:none;border-bottom:1px solid rgba(107,31,46,.35)}
+  a:hover{color:var(--wine-deep);border-bottom-color:var(--wine-deep)}
+
+  .layout{display:grid;grid-template-columns:220px minmax(0,1fr);min-height:100vh}
+
+  /* 左侧竖排目录 */
+  .sidebar{background:var(--ivory-2);border-right:2px solid var(--line);padding:32px 22px 40px;position:sticky;top:0;align-self:start;height:100vh;display:flex;flex-direction:column;gap:28px}
+  .sidebar .mark{font-family:"Songti SC",Georgia,serif;font-weight:700;font-size:22px;letter-spacing:.14em;color:var(--wine);border-bottom:2px solid var(--line);padding-bottom:14px}
+  .sidebar .mark small{display:block;font-weight:400;font-size:11px;letter-spacing:.24em;color:var(--ink-soft);margin-top:6px;text-transform:uppercase}
+  .sidebar nav ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+  .sidebar nav a{display:block;padding:9px 10px;border:0;color:var(--ink);font-size:15px;letter-spacing:.06em;border-left:3px solid transparent}
+  .sidebar nav a:hover{background:var(--ivory);border-left-color:var(--wine);color:var(--wine-deep)}
+  .sidebar .note{margin-top:auto;font-size:12px;color:var(--ink-soft);line-height:1.7;border-top:1px solid rgba(43,31,25,.25);padding-top:14px}
+
+  /* 主内容 */
+  main{padding:0 0 80px}
+
+  /* 首屏：超大字号品牌名铺满 */
+  .hero{padding:64px 56px 56px;border-bottom:2px solid var(--line);position:relative}
+  .hero .eyebrow{font-size:13px;letter-spacing:.34em;color:var(--wine);margin-bottom:6px}
+  .hero h1{font-family:"Songti SC","Source Han Serif SC",Georgia,serif;font-weight:700;font-size:clamp(82px,17vw,220px);line-height:.86;letter-spacing:-.02em;margin:0;color:var(--wine);word-break:break-word}
+  .hero .lead{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px;margin-top:34px;align-items:end}
+  .hero .lead p{margin:0;font-size:19px;max-width:46ch}
+  .hero .lead p strong{color:var(--wine-deep)}
+  .hero .ticket{border:2px solid var(--line);padding:18px 20px;background:var(--ivory)}
+  .hero .ticket dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:13.5px}
+  .hero .ticket dt{color:var(--ink-soft);letter-spacing:.08em}
+  .hero .ticket dd{margin:0;text-align:right}
+
+  /* 通用区块 */
+  section.block{padding:64px 56px;border-bottom:2px solid var(--line)}
+  section.block:last-of-type{border-bottom:0}
+  .block h2{font-family:"Songti SC","Source Han Serif SC",Georgia,serif;font-size:clamp(30px,4vw,44px);line-height:1.2;margin:0 0 8px;color:var(--wine-deep);letter-spacing:.01em}
+  .block .sub{margin:0 0 34px;color:var(--ink-soft);font-size:15.5px;max-width:62ch}
+  .block h3{font-size:19px;margin:0 0 10px;color:var(--ink);letter-spacing:.02em}
+
+  /* 粗描边直角卡片 */
+  .card{border:2px solid var(--line);padding:24px 26px;background:var(--ivory)}
+  .card + .card{margin-top:0}
+
+  /* 使用说明：步骤 */
+  .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+  .steps .card .num{display:inline-block;font-family:Georgia,serif;font-size:13px;letter-spacing:.2em;color:var(--wine);margin-bottom:12px}
+  .steps .card p{margin:0;font-size:15px;color:var(--ink-soft)}
+  .steps .card p b{color:var(--ink);font-weight:700}
+
+  /* 套餐：阶梯式递进 */
+  .plans{display:flex;flex-direction:column;gap:22px;align-items:stretch}
+  .plan{border:2px solid var(--line);padding:26px 30px;background:var(--ivory);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr) auto;gap:24px 32px;align-items:start}
+  .plan:nth-child(1){margin-right:12%}
+  .plan:nth-child(2){margin-right:6%;border-color:var(--wine);background:#fbf6ec;box-shadow:6px 6px 0 var(--ivory-2)}
+  .plan:nth-child(3){margin-right:0}
+  .plan .name{font-size:23px;font-weight:700;color:var(--wine-deep);margin:0 0 6px}
+  .plan .tag{display:inline-block;font-size:11px;letter-spacing:.18em;color:var(--ivory);background:var(--wine);padding:3px 9px;margin-bottom:10px}
+  .plan .price{font-family:Georgia,serif;font-size:26px;color:var(--ink);margin:0 0 4px}
+  .plan .annual{font-size:13px;color:var(--ink-soft);margin:0}
+  .plan ul{margin:0;padding:0 0 0 18px;font-size:15px;color:var(--ink-soft)}
+  .plan ul li{margin-bottom:5px}
+  .plan .pick{font-size:13px;text-align:right;color:var(--ink-soft);min-width:120px}
+  .plan .pick a{display:inline-block;margin-top:8px;font-size:13.5px}
+
+  /* 客户端区块 */
+  .clients{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+  .clients .card p{margin:0 0 8px;font-size:15px;color:var(--ink-soft)}
+  .clients .card p:last-child{margin-bottom:0}
+  .clients .card .state{font-size:12px;letter-spacing:.14em;color:var(--wine);display:block;margin-bottom:10px}
+
+  /* FAQ 按主题分组 */
+  .faq-group + .faq-group{margin-top:40px}
+  .faq-group > h3{border-bottom:2px solid var(--line);padding-bottom:10px;margin-bottom:20px;font-size:16px;letter-spacing:.14em;color:var(--wine-deep)}
+  .qa{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:10px 34px;padding:16px 0;border-bottom:1px dashed rgba(43,31,25,.28)}
+  .qa:last-child{border-bottom:0}
+  .qa .q{font-weight:700;font-size:16px;color:var(--ink)}
+  .qa .a{margin:0;font-size:15px;color:var(--ink-soft)}
+  .qa .a b{color:var(--wine-deep);font-weight:700}
+
+  /* 页脚 */
+  footer{padding:44px 56px 60px;background:var(--wine);color:var(--ivory);font-size:14px}
+  footer a{color:var(--ivory);border-bottom-color:rgba(246,241,231,.5)}
+  footer strong{letter-spacing:.14em;font-size:16px}
+  footer p{margin:8px 0;max-width:70ch;opacity:.9}
+
+  @media (max-width:900px){
+    .layout{grid-template-columns:1fr}
+    .sidebar{position:static;height:auto;border-right:0;border-bottom:2px solid var(--line);padding:22px 24px 26px}
+    .sidebar nav ul{flex-direction:row;flex-wrap:wrap;gap:4px 10px}
+    .sidebar nav a{border-left:0;border-bottom:2px solid transparent;padding:6px 4px;font-size:14px}
+    .sidebar nav a:hover{border-left:0;border-bottom-color:var(--wine);background:transparent}
+    .sidebar .note{display:none}
+    .hero{padding:40px 24px 40px}
+    .hero .lead{grid-template-columns:1fr;gap:24px;margin-top:24px}
+    section.block{padding:44px 24px}
+    .steps{grid-template-columns:1fr}
+    .plan{grid-template-columns:1fr}
+    .plan:nth-child(1),.plan:nth-child(2),.plan:nth-child(3){margin-right:0}
+    .plan .pick{text-align:left}
+    .clients{grid-template-columns:1fr}
+    .qa{grid-template-columns:1fr;gap:6px}
+    footer{padding:34px 24px 48px}
+  }
+</style><div class="layout">
+
+  <aside class="sidebar">
+    <div class="mark">
+      afweb
+      <small>读一读 · 再决定</small>
+    </div>
+    <nav aria-label="页面目录">
+      <ul>
+        <li><a href="#start">先说清楚</a></li>
+        <li><a href="#howto">怎么用起来</a></li>
+        <li><a href="#plans">套餐与价格</a></li>
+        <li><a href="#clients">客户端</a></li>
+        <li><a href="#faq">常见问题</a></li>
+        <li><a href="#contact">找到我们</a></li>
+      </ul>
+    </nav>
+    <div class="note">
+      这一页的信息量刚好够你做决定。<br>
+      没有倒计时，没有抢购按钮。
+    </div>
+  </aside>
+
+  <main>
+
+    <header class="hero" id="start">
+      <p class="eyebrow">AFWEB · 订阅服务说明页</p>
+      <h1>afweb</h1>
+      <div class="lead">
+        <p>
+          <strong>先别急着下单，花两分钟看看这一页。</strong>
+          我们把能说的都说在前面：有哪些套餐、价格怎么算、装到设备上要走哪几步、出问题去哪儿问。
+          剩下的判断，交给你自己。
+        </p>
+        <div class="ticket">
+          <dl>
+            <dt>页面性质</dt><dd>对外说明</dd>
+            <dt>套餐数量</dt><dd>三档</dd>
+            <dt>计费方式</dt><dd>按月 / 按年</dd>
+            <dt>更新方式</dt><dd>本页为准</dd>
+          </dl>
+        </div>
+      </div>
+    </header>
+
+    <section class="block" id="howto">
+      <h2>怎么用起来</h2>
+      <p class="sub">不需要研究原理，按顺序做完下面三件事就行。中间任何一步卡住，都可以直接来问我们。</p>
+      <div class="steps">
+        <article class="card">
+          <span class="num">STEP 01</span>
+          <h3>挑一档合适的</h3>
+          <p>先看你的<b>设备数量</b>和<b>每月流量</b>，再看要不要流媒体和线路优化。拿不准就选中间那档，用一个月再调整也不亏。</p>
+        </article>
+        <article class="card">
+          <span class="num">STEP 02</span>
+          <h3>拿到订阅信息</h3>
+          <p>开通后会给你一份<b>订阅地址和账户信息</b>。这份东西等于钥匙，请自己收好，别随手转发到群里。</p>
+        </article>
+        <article class="card">
+          <span class="num">STEP 03</span>
+          <h3>在设备上导入</h3>
+          <p>打开你常用的客户端，粘贴订阅地址，让它自己读一次配置。读完之后<b>手动选一个节点</b>，就能开始用了。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="block" id="plans">
+      <h2>套餐与价格</h2>
+      <p class="sub">三档，逐级往上。我们不设隐藏档位，也没有“联系客服才知道”的价格。按年付会更划算一点，但如果你只想先试试，月付完全没问题。</p>
+
+      <div class="plans">
+
+        <article class="plan">
+          <div>
+            <span class="tag">日常够用</span>
+            <h3 class="name">基础版</h3>
+            <p class="price">¥15 / 月</p>
+            <p class="annual">按年付 ¥150 / 年</p>
+          </div>
+          <ul>
+            <li>每月 100GB 流量额度</li>
+            <li>最多 3 台设备同时在线</li>
+            <li>基础流媒体解锁</li>
+            <li>常规线路节点池</li>
+          </ul>
+          <div class="pick">
+            <span>适合一个人、一台手机加一台电脑。</span><br>
+            <a href="#contact">怎么开这一档</a>
+          </div>
+        </article>
+
+        <article class="plan">
+          <div>
+            <span class="tag">多数人的选择</span>
+            <h3 class="name">旗舰版</h3>
+            <p class="price">¥35 / 月</p>
+            <p class="annual">按年付 ¥350 / 年</p>
+          </div>
+          <ul>
+            <li>每月 300GB 流量额度</li>
+            <li>最多 5 台设备同时在线</li>
+            <li>全节点原生流媒体解锁</li>
+            <li>IPLC 专线，针对游戏延迟做优化</li>
+            <li>7×24 优先工单支持</li>
+          </ul>
+          <div class="pick">
+            <span>家里几台设备一起用，或者你在意延迟。</span><br>
+            <a href="#contact">怎么开这一档</a>
+          </div>
+        </article>
+
+        <article class="plan">
+          <div>
+            <span class="tag">人比较多</span>
+            <h3 class="name">团队版</h3>
+            <p class="price">¥85 / 月</p>
+            <p class="annual">按年付 ¥850 / 年</p>
+          </div>
+          <ul>
+            <li>每月 1000GB 流量额度</li>
+            <li>最多 20 台设备同时在线</li>
+            <li>VIP 专属高带宽节点</li>
+            <li>支持企业定制路由</li>
+            <li>配一位专属客户经理</li>
+          </ul>
+          <div class="pick">
+            <span>工作室或小团队，需要统一管理。</span><br>
+            <a href="#contact">怎么开这一档</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="block" id="clients">
+      <h2>客户端</h2>
+      <p class="sub">我们不开发自己的客户端，也不指定唯一工具。你手上已有的那一款，通常就够用。下面按平台分四类说，具体下载请以对应项目或应用商店的官方页面为准。</p>
+
+      <div class="clients">
+        <article class="card">
+          <span class="state">桌面 · Windows / macOS / Linux</span>
+          <h3>电脑端</h3>
+          <p>选一款支持订阅导入的通用客户端即可。配置方式大同小异：打开软件，找到“订阅”或“配置”一栏，粘贴地址，让它读取。</p>
+          <p>读取完成后不要忘了在节点列表里手动选一个，很多人以为没连上，其实只是没选。</p>
+        </article>
+        <article class="card">
+          <span class="state">移动 · iOS</span>
+          <h3>iPhone / iPad</h3>
+          <p>在 App Store 里找一款能导入订阅的工具。第一次使用时系统会弹窗询问是否添加配置，点允许才能正常工作。</p>
+          <p>如果你同时用多个网络工具，注意别让它们互相抢配置。</p>
+        </article>
+        <article class="card">
+          <span class="state">移动 · Android</span>
+          <h3>安卓手机</h3>
+          <p>安卓的选择比 iOS 多一些，安装后同样走“导入订阅—读取—选节点”这三步。</p>
+          <p>部分机型的省电策略会杀掉后台进程，如果发现断流，先在系统设置里把这个应用加入白名单。</p>
+        </article>
+        <article class="card">
+          <span class="state">路由器 · 进阶</span>
+          <h3>路由器或软路由</h3>
+          <p>如果你希望所有设备自动走同一套配置，可以把订阅放到路由器上统一处理。</p>
+          <p>这一步需要一点动手能力，配置错了会整屋断网。不确定的话，就在单台设备上先用着。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="block" id="faq">
+      <h2>常见问题</h2>
+      <p class="sub">按主题分了四组。如果下面没写到你的情况，直接来问，我们回得不算慢。</p>
+
+      <div class="faq-group">
+        <h3>关于套餐与计费</h3>
+        <div class="qa">
+          <div class="q">按月付还是按年付，哪个更合适？</div>
+          <p class="a">按年付均价更低，但前提是你确定会长期用。第一次接触、或者只是想试试看，<b>建议先月付</b>，用满一个周期再决定要不要转年付。</p>
+        </div>
+        <div class="qa">
+          <div class="q">中途可以换档吗？</div>
+          <p class="a">可以。从低档换高档、从高档换低档都行，具体怎么折算按当时的开通情况处理。开之前问一句，我们会把算法说清楚。</p>
+        </div>
+        <div class="qa">
+          <div class="q">流量每月什么时候重置？</div>
+          <p class="a">按你的开通日期起算一个自然周期，到期重置。不是每月 1 号统一清零，这一点请留意，别按月初来估自己的余量。</p>
+        </div>
+      </div>
+
+      <div class="faq-group">
+        <h3>关于设备与连接</h3>
+        <div class="qa">
+          <div class="q">“同时在线”是怎么算的？</div>
+          <p class="a">指的是同一时间处于连接状态的设备数量。<b>超出的设备不会让你的账号出问题</b>，但新设备会挤掉旧设备，表现就是某一台突然断掉。</p>
+        </div>
+        <div class="qa">
+          <div class="q">换了新手机，要不要重新开通？</div>
+          <p class="a">不用。订阅跟着账号走，不跟设备走。在新手机上装好客户端，用原来的订阅地址导入就行，旧设备不用了记得退出。</p>
+        </div>
+        <div class="qa">
+          <div class="q">某个节点连不上怎么办？</div>
+          <p class="a">先换一个节点试试，多数情况换个节点就好了。如果整组节点都不通，再去看客户端的日志，把报错信息截下来发给我们，比自己猜快得多。</p>
+        </div>
+      </div>
+
+      <div class="faq-group">
+        <h3>关于隐私与账户</h3>
+        <div class="qa">
+          <div class="q">订阅地址可以分享给朋友吗？</div>
+          <p class="a">不建议。订阅地址相当于你的凭据，谁拿到谁就能用你的额度。要分享，让对方自己开一档，基础版并不贵。</p>
+        </div>
+        <div class="qa">
+          <div class="q">账号密码忘了呢？</div>
+          <p class="a">提供开通时使用的联系方式，我们会核实后帮你重置。核对是为了保护你，所以可能会多问一句，请体谅。</p>
+        </div>
+      </div>
+
+      <div class="faq-group">
+        <h3>关于售后与支持</h3>
+        <div class="qa">
+          <div class="q">工单一般多久回？</div>
+          <p class="a">旗舰版走优先通道，团队版由专属客户经理跟进，基础版按顺序处理。描述里写清楚“用的什么设备、什么客户端、报什么错”，能省掉一轮来回。</p>
+        </div>
+        <div class="qa">
+          <div class="q">用着不顺手，能退吗？</div>
+          <p class="a">这一页没有写退款政策的具体条款，所以请<b>在开通前直接问我们</b>，把规则确认清楚再付款。我们不想让你在不知情的情况下付钱。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="contact">
+      <h2>找到我们</h2>
+      <p class="sub">开通用、换档用、出问题用，都是同一个入口。提问时把情况写具体一点，我们回得更准。</p>
+      <div class="card">
+        <h3>联系与开通</h3>
+        <p>目前的具体联系方式不在这一页展示，请以你收到的那份开通信息里的渠道为准。如果你还没拿到，就先别付款——先问清楚，再决定。</p>
+        <p>需要确认的三件事：<b>套餐档位、计费周期、开通方式</b>。这三点对上了，其余都好办。</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <strong>afweb</strong>
+  <p>这一页是说明，不是承诺清单。页面上的套餐名称、价格与权益以本页展示为准；没有写在这里的内容，我们不会替你补上。</p>
+  <p>使用任何网络工具前，请自行确认所在地的相关规定，并对自己的使用行为负责。</p>
+</footer><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>
